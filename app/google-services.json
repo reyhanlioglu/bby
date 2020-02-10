@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492921218778",
+    "firebase_url": "https://birbaskayol-74658.firebaseio.com",
+    "project_id": "birbaskayol-74658",
+    "storage_bucket": "birbaskayol-74658.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492921218778:android:88734067122fcef4",
+        "android_client_info": {
+          "package_name": "com.emrereyhanlioglu.bby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492921218778-oqdceivemu4q3sd1sd7cvj2f93kprmh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emrereyhanlioglu.bby",
+            "certificate_hash": "7e1a1121987ab7152a6a719756090bcae9e31e20"
+          }
+        },
+        {
+          "client_id": "492921218778-1uouro5lfag3qgvtfp0pp5f162t2ulbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqoA5a7v6RWH67LeFflXSvDhM6K25j1jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492921218778-1uouro5lfag3qgvtfp0pp5f162t2ulbk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

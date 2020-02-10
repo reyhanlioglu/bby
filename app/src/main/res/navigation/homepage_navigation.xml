@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/homepage_navigation"
+            app:startDestination="@id/homepageFragment">
+
+    <fragment
+            android:id="@+id/homepageFragment"
+            android:name="com.emrereyhanlioglu.bby.students.homepage.view.HomepageFragment"
+            android:label="Anasayfa"
+            tools:layout="@layout/fragment_homepage">
+        <action
+                android:id="@+id/actionExamResults"
+                app:destination="@id/examResultsFragment"
+                />
+        <action
+                android:id="@+id/actionRemainingTime"
+                app:destination="@id/remainingTimeFragment"/>
+        <action
+                android:id="@+id/actionAnnouncements"
+                app:destination="@id/announcementsFragment"/>
+        <action
+                android:id="@+id/actionMessageBoard"
+                app:destination="@id/messageBoardFragment"/>
+        <action
+                android:id="@+id/actionStatistics"
+                app:destination="@id/statisticsFragment"/>
+        <action
+                android:id="@+id/actionAttendance"
+                app:destination="@id/attendanceFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/examResultsFragment"
+            android:name="com.emrereyhanlioglu.bby.students.examResults.view.ExamResultsFragment"
+            android:label="Sınav Sonuçlarım"
+            tools:layout="@layout/fragment_exam_results"/>
+    <fragment
+            android:id="@+id/remainingTimeFragment"
+            android:name="com.emrereyhanlioglu.bby.students.remainingTime.RemainingTimeFragment"
+            android:label="Sınava Kalan Süre"
+            tools:layout="@layout/fragment_remaining_time"/>
+    <fragment
+            android:id="@+id/announcementsFragment"
+            android:name="com.emrereyhanlioglu.bby.students.announcements.view.AnnouncementsFragment"
+            android:label="Duyurular"
+            tools:layout="@layout/fragment_announcements"/>
+    <fragment
+            android:id="@+id/messageBoardFragment"
+            android:name="com.emrereyhanlioglu.bby.students.messageBoard.view.MessageBoardFragment"
+            android:label="Mesaj Panosu"
+            tools:layout="@layout/fragment_message_board"/>
+    <fragment
+            android:id="@+id/statisticsFragment"
+            android:name="com.emrereyhanlioglu.bby.students.statistics.view.StatisticsFragment"
+            android:label="İstatistiklerim"/>
+    <fragment
+            android:id="@+id/attendanceFragment"
+            android:name="com.emrereyhanlioglu.bby.students.attendance.AttendanceFragment"
+            android:label="Devamsızlık Durumum"
+            tools:layout="@layout/fragment_attendance"/>
+</navigation>

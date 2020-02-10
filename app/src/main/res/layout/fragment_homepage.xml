@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.emrereyhanlioglu.bby.students.homepage.view.HomepageFragment">
+
+    <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:columnCount="2"
+            app:rowCount="3"
+            app:alignmentMode="alignMargins"
+            android:padding="12dp"
+            >
+
+
+        <!-- Row 1 -->
+
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickExamResults"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="Sınav Sonuçlarım"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 2 -->
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickAnnouncements"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/announcement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="Duyurular"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickStatistics"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/rising"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="İstatistiklerim"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Row 3-->
+
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickMessageBoard"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/conversation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="Sınıf Mesaj Panosu"
+                        android:textColor="@android:color/holo_purple"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickAttendance"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="Devamsızlık Durumum"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="4"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:onClick="onClickRemainingTime"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:weightSum="11">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:src="@drawable/hourglass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="7"
+                        />
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textAlignment="center"
+                        android:text="Sınava Ne Kadar Kaldı?"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background_login"
+        >
+<androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        >
+
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/loginCard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/loginEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="32dp"
+
+            >
+
+        <ImageView
+
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bby_logo"
+                android:layout_margin="8dp"
+
+                />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginCard"
+            app:layout_constraintBottom_toTopOf="@id/loginPassword"
+            android:id="@+id/loginEmail"
+            style="@style/viewCustom"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@drawable/rounded_background_white"
+            android:layout_marginTop="8dp"
+
+            />
+
+    <EditText
+            app:layout_constraintTop_toBottomOf="@id/loginEmail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/buttonLogin"
+            android:id="@+id/loginPassword"
+            style="@style/viewCustom"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Şifre"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"
+            android:padding="4dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:background="@drawable/rounded_background_white"
+            android:layout_margin="8dp"
+            />
+
+
+    <Button
+            android:id="@+id/buttonLogin"
+            style="@style/viewCustom"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:background="@drawable/rounded_background_red_accent"
+            android:onClick="signin"
+            android:text="GİRİŞ YAP"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginPassword"
+            app:layout_constraintTop_toBottomOf="@id/loginPassword"
+
+            />
+
+    <Button
+            android:id="@+id/buttonGoToSignup"
+            style="@style/viewCustom"
+            android:layout_width="0dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_background_red_accent"
+            android:onClick="openSignupPage"
+            android:text="KAYIT OL"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintStart_toStartOf="@+id/loginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            android:layout_margin="32dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

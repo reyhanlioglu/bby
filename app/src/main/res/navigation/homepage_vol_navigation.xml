@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/homepage_vol_navigation"
+            app:startDestination="@id/homepageVolFragment">
+
+    <fragment
+            android:id="@+id/homepageVolFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.homepage.HomepageVolFragment"
+            android:label="Anasayfa"
+            tools:layout="@layout/fragment_homepage_vol">
+        <action
+                android:id="@+id/actionRemainingTimeVol"
+                app:destination="@id/remainingTimeFragment2"/>
+        <action
+                android:id="@+id/actionSelectClass"
+                app:destination="@id/selectClassFragment"/>
+        <action
+                android:id="@+id/actionAnnouncementShare"
+                app:destination="@id/announcementShareFragment"/>
+        <action
+                android:id="@+id/actionMessageBoardVol"
+                app:destination="@id/messageBoardFragment2"/>
+
+    </fragment>
+    <fragment
+            android:id="@+id/remainingTimeFragment2"
+            android:name="com.emrereyhanlioglu.bby.students.remainingTime.RemainingTimeFragment"
+            android:label="Sınava Kalan Süre"
+            tools:layout="@layout/fragment_remaining_time"/>
+    <fragment
+            android:id="@+id/selectClassFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.examResultShare.SelectClassFragment"
+            android:label="Sınıf Seç"
+            tools:layout="@layout/fragment_select_class">
+        <action
+                android:id="@+id/actionSelectStudent"
+                app:destination="@id/selectStudentFragment"/>
+        <argument
+                android:name="destinationPage"
+                app:argType="string"
+                android:defaultValue="-"/>
+    </fragment>
+    <fragment
+            android:id="@+id/selectStudentFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.examResultShare.SelectStudentFragment"
+            android:label="Öğrenci Seç"
+            tools:layout="@layout/fragment_select_student">
+        <argument
+                android:name="selectedClass"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <action
+                android:id="@+id/actionExamResultShare"
+                app:destination="@id/examResultShareFragment"/>
+        <argument
+                android:name="destinationPage"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <action
+                android:id="@+id/actionAttendanceShare"
+                app:destination="@id/attendanceShareFragment"/>
+        <action
+                android:id="@+id/actionShowStudentResults"
+                app:destination="@id/examResultsFragment2" />
+    </fragment>
+    <fragment
+            android:id="@+id/examResultShareFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.examResultShare.ExamResultShareFragment"
+            android:label="Sınav Sonucu Paylaş"
+            tools:layout="@layout/fragment_exam_result_share">
+        <argument
+                android:name="studentUid"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <argument
+                android:name="className"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <argument
+                android:name="studentName"
+                app:argType="string"
+                android:defaultValue="-"/>
+    </fragment>
+    <fragment
+            android:id="@+id/announcementShareFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.announcementShare.AnnouncementShareFragment"
+            android:label="Duyuru Yap"
+            tools:layout="@layout/fragment_announcement_share">
+        <argument
+                android:name="fullname"
+                app:argType="string"
+                android:defaultValue="-"/>
+    </fragment>
+    <fragment
+            android:id="@+id/messageBoardFragment2"
+            android:name="com.emrereyhanlioglu.bby.students.messageBoard.view.MessageBoardFragment"
+            android:label="Mesaj Panosu"
+            tools:layout="@layout/fragment_message_board"/>
+    <fragment
+            android:id="@+id/attendanceShareFragment"
+            android:name="com.emrereyhanlioglu.bby.volunteers.attendanceShare.AttendanceShareFragment"
+            android:label="Devamsızlık Kaydı Ekle"
+            tools:layout="@layout/fragment_attendance_share">
+        <argument
+                android:name="studentUid"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <argument
+                android:name="className"
+                app:argType="string"
+                android:defaultValue="-"/>
+        <argument
+                android:name="studentName"
+                app:argType="string"
+                android:defaultValue="-"/>
+    </fragment>
+    <fragment
+            android:id="@+id/signupFragment2"
+            android:name="com.emrereyhanlioglu.bby.login.view.SignupFragment"
+            android:label="Kullanıcı Oluştur"
+            tools:layout="@layout/fragment_signup" />
+    <fragment
+            android:id="@+id/examResultsFragment2"
+            android:name="com.emrereyhanlioglu.bby.students.examResults.view.ExamResultsFragment"
+            android:label="Sınav Sonuçları"
+            tools:layout="@layout/fragment_exam_results" >
+        <argument
+                android:name="studentUid"
+                app:argType="string"
+                android:defaultValue="-" />
+        <argument
+                android:name="className"
+                app:argType="string"
+                android:defaultValue="-" />
+    </fragment>
+</navigation>
